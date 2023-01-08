@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Game {
     private final Integer diceNumber;
     private final Integer tryCount;
-    private Scanner scan1; // for Enter
+    private final Scanner scan1; // for Enter
     private final Random rand1;
 
     public Game(Integer tryCount, Integer diceNumber) {
@@ -18,6 +18,7 @@ public class Game {
         System.out.println("\n" + pl.getName() + "'s turn. The target number is " + target);
 
         int[] dices = new int[diceNumber];
+
         for(int i = 0; i < tryCount; i++) { // how many times
             for(int j = 0; j < diceNumber; j++) {  // how many dices
                 dices[j] = rand1.nextInt(10); // creating numbers from 0 to 10
