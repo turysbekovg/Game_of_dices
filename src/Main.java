@@ -16,14 +16,13 @@ public class Main {
 
     public static Player createPlayer(Scanner scan1){
 
-        System.out.print("\nPlayer 2 enter your name and surname, please: ");  // asking for the second players name and surname
+        System.out.print("Hello, enter your name and surname, please: ");  // asking for the second players name and surname
         String name = scan1.next();
         String surname = scan1.next();
 
         Player pl2 = new Player (name, surname, 0);  // creating second player
 
-        System.out.println("\nHello! " + pl2.getName() + " " + pl2.getSurname() + ", you are Player 2 to " +
-                "play the game of dices");
+        System.out.println("\nPlayer created. \n");
 
         return pl2;
     }
@@ -83,9 +82,11 @@ public class Main {
 
 
         // creating players
-        Player pl1 = new Player("Galymzhan", "Turysbekov", 0);  // creating new player
-        System.out.println("Hello, " + pl1.getName() + " " + pl1.getSurname() + " you are Player 1 of the game of dices.");
+//        Player pl1 = new Player("Galymzhan", "Turysbekov", 0);  // creating new player
+        Player pl1 = createPlayer(scan1);
+        System.out.println("Hello, " + pl1.getName() + " " + pl1.getSurname() + " you are the Player 1 of the game of dices.\n");
         Player pl2 = createPlayer(scan1);  // creating new player
+        System.out.println("Hello, " + pl2.getName() + " " + pl2.getSurname() + " you are the Player 2 of the game of dices.");
 
 
         // creating game and asking for targets
