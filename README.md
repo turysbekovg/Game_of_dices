@@ -1,2 +1,2 @@
 # Game_of_dices
-THIS IS A SIMPLE GAME, WHERE YOU NEED TO PROVIDE A NUMBER, AND THE GAME IS BASED ON GUESSING THE NUMBER YOU PROVIDED
+This is a simple game, which is based on guessing a number you have provided.
